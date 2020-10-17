@@ -1,0 +1,19 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+version = 2.0
+group = 'davenkin'
+archivesBaseName = 'datetimeplugin'
+repositories.mavenCentral()
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+}
+
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: 'file://D:/Work/Learn/java/gradle/gradle-learning/10-custom-plugin/create-plugin-in-standalone-project/lib')
+    }
+}
+

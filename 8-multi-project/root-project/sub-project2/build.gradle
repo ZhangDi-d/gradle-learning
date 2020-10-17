@@ -1,0 +1,13 @@
+//project 2
+
+task taskC {
+    doLast {
+        println 'this is taskC from project 2'
+    }
+}
+
+task taskD  {
+    doLast {
+        println 'this is taskD from project 2'
+    }
+}

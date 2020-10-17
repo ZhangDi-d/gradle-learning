@@ -1,0 +1,18 @@
+buildscript {
+    repositories {
+        maven {
+            url 'file://D:/Work/Learn/java/gradle/gradle-learning/9-custom-task/create-task-in-standalone-project/lib/'
+        }
+
+    }
+
+
+    dependencies {
+        classpath group: 'dizhang', name: 'hellotask', version: '2.0'
+    }
+}
+
+
+task hello(type: davenkin.HelloWorldTask){
+    message ="I am a programmer!!!!!"
+}
